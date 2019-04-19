@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FacultySignin">
+    tools:context=".StudentLogin">
+
     <GridLayout
         android:layout_gravity="center"
         android:layout_width="wrap_content"
@@ -14,13 +15,13 @@
         android:layout_centerInParent="true"
         >
         <TextView
-            android:id="@+id/tvFacultyEmail"
+            android:id="@+id/tvStudentEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email:"
             />
         <EditText
-            android:id="@+id/etFacultyEmail"
+            android:id="@+id/etStudentEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="example@example.com"
@@ -28,7 +29,7 @@
             android:layout_centerHorizontal="true"
             />
         <TextView
-            android:id="@+id/tvFacultyPassword"
+            android:id="@+id/tvStudentPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Password:"
@@ -36,21 +37,22 @@
 
             />
         <EditText
-            android:id="@+id/etFacultyPassword"
+            android:id="@+id/etStudentPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="*********"
             android:layout_toEndOf="@+id/tvFacultyPassword"
             android:layout_below="@+id/etFacultyEmail"
             />
-<Button
-    android:id="@+id/btnFacultyLogin"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Login"
-    android:background="@android:color/holo_orange_dark"
+        <Button
+            android:id="@+id/btnStudentLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@android:color/holo_orange_dark"
 
-    />
+            />
     </GridLayout>
+
 
 </RelativeLayout>

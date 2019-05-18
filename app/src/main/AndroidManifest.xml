@@ -9,7 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StudentLogin"></activity>
+        <activity android:name=".schedule_create"></activity>
+        <activity android:name=".pick_peri" />
+        <activity android:name=".about" />
+        <activity android:name=".attendance" />
+        <activity android:name=".note" />
+        <activity android:name=".scheduler" />
+        <activity android:name=".content_main" />
+        <activity android:name=".list_ele" />
+        <activity android:name=".note_create" />
+        <activity android:name=".pick_period" />
+        <activity android:name=".stu_profile" />
+        <activity android:name=".edit_student" />
+        <activity android:name=".student_registration" />
+        <activity android:name=".AppBaseActivity" />
         <activity android:name=".FacultySignin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

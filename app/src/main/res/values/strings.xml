@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Androidattendancesystem</string>
+    <string name="appbar_scrolling_view_behavior">1</string>
 </resources>

@@ -3,11 +3,11 @@ package com.androidattendancesystem;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class StudentLogin extends AppCompatActivity {
+public class student_registration extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_login);
+        setContentView(R.layout.activity_student_registration);
     }
 }

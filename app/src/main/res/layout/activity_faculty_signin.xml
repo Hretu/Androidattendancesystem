@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#04a3a3"
+    android:gravity="center"
     tools:context=".FacultySignin">
-    <GridLayout
-        android:layout_gravity="center"
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
+        android:text="Faculty Login"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter username"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/username"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password"
+            android:textStyle="bold"
+            android:src = "@drawable/password"
+            android:hint="Enter Password"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            />
+    <Button
+        android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:rowCount="3"
-        android:layout_centerInParent="true"
-        >
-        <TextView
-            android:id="@+id/tvFacultyEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email:"
-            />
-        <EditText
-            android:id="@+id/etFacultyEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="example@example.com"
-            android:layout_toEndOf="@+id/tvFacultyEmail"
-            android:layout_centerHorizontal="true"
-            />
-        <TextView
-            android:id="@+id/tvFacultyPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password:"
-            android:layout_below="@+id/tvFacultyEmail"
-
-            />
-        <EditText
-            android:id="@+id/etFacultyPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="*********"
-            android:layout_toEndOf="@+id/tvFacultyPassword"
-            android:layout_below="@+id/etFacultyEmail"
-            />
-<Button
-    android:id="@+id/btnFacultyLogin"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Login"
-    android:background="@android:color/holo_orange_dark"
-
-    />
-    </GridLayout>
-
-</RelativeLayout>
+        android:background="#31d84a"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+</LinearLayout>
